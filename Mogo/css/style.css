@@ -611,7 +611,9 @@ hr{
 .our_work_image .image_text{
    color:#ffffff;
    position:absolute;
-   left: 50%;
+   left: 30%;
+   top: 20%;
+   transform: scale(0.7);
    opacity: 0;
 }
 .our_work_image:hover .image_text{
@@ -637,6 +639,7 @@ hr{
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
+   
 }
 
 .happy_clients_section{
@@ -716,9 +719,7 @@ hr{
    }
    
    /* DEVICES */
-   .image_ipad{
-      /* width */
-   }
+   
 
    /* ACCORDION */
    .what_we_do_accordion{
@@ -735,10 +736,21 @@ hr{
 @media(max-width : 770px){
 
    /* SLIDER */
-   .slider{
-      display:none;
+   .slider .slider_item{
+      display:block;
    }
 
+   .slider .slider_item .slider_item_text{
+      font-size: 12px;
+   }
+
+.slider .slider_item .slider_icon{
+   margin: 0;
+}
+
+   .slider .slider_item .slider_item_text .upper_text{
+      text-align: center;
+   }
 
    .header_nav{
       display: none;
@@ -870,5 +882,14 @@ hr{
    }
    .happy_client img{
       width: 85px;
+   }
+
+   /* SLIDER */
+   .slider .slider_item{
+      padding: 70px 80px 70px 80px
+   }
+
+   .slider .slider_item .slider_item_text{
+      font-size: 10px;
    }
 }
