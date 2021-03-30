@@ -11,18 +11,23 @@
    <title>Mogo</title>
 </head>
 
-<body>
+<body> 
    <header class="header">
       <div class="container">
          <div class="header_inner">
             <div class="header_logo">MoGo</div>
             <nav class="header_nav">
-               <a class="nav_link" href="#">ABOUT</a>
-               <a class="nav_link" href="#">SERVICE</a>
-               <a class="nav_link" href="#">WORK</a>
-               <a class="nav_link" href="#">BLOG</a>
-               <a class="nav_link" href="#">CONTACT</a>
+               <a class="nav_link" data-goto = ".about" href="">ABOUT</a>
+               <a class="nav_link" data-goto = ".service" href="#">SERVICE</a>
+               <a class="nav_link" data-goto = ".work" href="#">WORK</a>
+               <a class="nav_link" data-goto = ".blog" href="#">BLOG</a>
+               <a class="nav_link" data-goto = ".contact" href="#">CONTACT</a>
             </nav>
+            <div class="burger">
+               <div class="item_burger first"></div>
+               <div class="item_burger second"></div>
+               <div class="item_burger third"></div>
+            </div>
          </div>
       </div>
    </header>
@@ -42,7 +47,7 @@
       </div>
    </div>
 
-   <div class="section">
+   <div class="section about">
       <div class="container">
          <div class="section_title">
 
@@ -96,7 +101,7 @@
       </div>
    </div>
 
-   <div class="section">
+   <div class="section work">
       <div class="container">
          <div class="section_title">
             <div class="title_section_head">We work with</div>
@@ -163,7 +168,7 @@
 
    <div class="section end">
       <div class="container">
-         <div class="section_title">
+         <div class="section_title service">
             <div class="title_section_head">Service</div>
             <div class="title_section_main">what we do</div>
             <div class="title_section_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
@@ -260,7 +265,7 @@
       </div>
 
       <div class="container">
-         <div class="section_title">
+         <div class="section_title blog">
             <div class="title_section_head">Who we are</div>
             <div class="title_section_main">meet our team</div>
             <div class="title_section_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
@@ -409,7 +414,7 @@
          </div>
       </div>
 
-      <div class="happy_clients">
+      <div class="happy_clients contact">
          <div class="container">
             <div class="section_title">
 
@@ -460,6 +465,8 @@
          </div>
       </div>
    </div>
+
+   <script src="/javascript//script.js"></script>
 </body>
 
 </html>
